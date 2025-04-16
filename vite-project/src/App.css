@@ -82,8 +82,26 @@ body {
   margin: 20px;
 }
 
+.swipe-explain-mini {
+  font-size: 1vw;
+  margin: 10px;
+}
+
+.swipe-image-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .ts-logo {
-  width: 250px;
+  width: 180px;
+  margin: 10px;
+}
+
+.react-logo {
+  width: 180px;
+  margin: 10px;
 }
 
 .cs-logo {
@@ -94,3 +112,6 @@ body {
   height: 40vh;
 }
 
+.link-area {
+  background-color: #86AC41;
+}
