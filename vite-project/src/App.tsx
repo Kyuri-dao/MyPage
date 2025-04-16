@@ -1,33 +1,72 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+
+import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import github_logo from "./assets/github-mark-white.svg";
+import qiita_logo from "./assets/qiita-white-icon.png"; 
+import ts_logo from "./assets/ts_logo.svg";
+import cs_logo from "./assets/c_sharp_logo.png";
+import my_rn_pj from "./assets/my_rn_project.png";
+
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='main-container'>
+        <header className='main-header'>
+          <div className='title'>
+            <p className='title-index'>Kyuri-dao/Dev</p>
+          </div>
+          
+          <div className='title-menu'>
+            <a href="https://github.com/Kyuri-dao">
+              <img src={github_logo} alt="git hubのロゴ" className='service-logo'/>
+            </a>
+            <a href="https://qiita.com/Kyuri-dao">
+              <img src={qiita_logo} alt="Qiitaのロゴ" className='service-logo' />
+            </a>
+          </div>
+        </header>
+
+        <div className='child-container'>
+          <div className='swipe-area'>
+            <p>My Projects</p>
+            <Swiper>
+              <SwiperSlide>
+                <div  className='swipe-index'>
+                  <div className='swipe-title'>
+                    <p>TypeScript/JavaScript</p>
+                    <img src={ts_logo} alt="ts logo" className='ts-logo'/>
+                  </div>
+                  <div className='swipe-explain'>
+                    <p>TS & React Nativeを用いたアプリ制作</p>
+                    <img src={my_rn_pj} alt="React Nativeで作られたアプリの画像" className='my_rn_pj'/>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className='swipe-index'>
+                  <div className='swipe-title'>
+                    <p>C#</p>
+                    <img src={cs_logo} alt="c# logo" className='cs-logo'/>
+                  </div>
+                  <div className='swipe^explain'>
+                    <p>C# & .NET MAUIを用いたアプリ制作</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
