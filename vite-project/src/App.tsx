@@ -1,4 +1,4 @@
-import { useState } from 'react';
+//import { useState } from 'react';
 import './App.css';
 
 import 'swiper/css';
@@ -10,6 +10,8 @@ import ts_logo from "./assets/ts_logo.svg";
 import react_logo from "./assets/react.svg";
 import cs_logo from "./assets/c_sharp_logo.png";
 import my_rn_pj from "./assets/my_rn_project.png";
+
+import Card from "./Card";
 
 
 
@@ -67,8 +69,23 @@ function App() {
                     <p>C#</p>
                     <img src={cs_logo} alt="c# logo" className='cs-logo'/>
                   </div>
-                  <div className='swipe^explain'>
+                  <div className='swipe-explain'>
                     <p>C# & .NET MAUIを用いたアプリ制作</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className='swipe-index'>
+                  <div className='swipe-title'>
+                    <p>TypeScript</p>
+                    <img src={react_logo} alt="Reactロゴ" className='react-logo' />
+                  </div>
+                  <div className='swipe-explain'>
+                    <p>React & Viteを用いたwebサイト制作</p>
+                    <p className='swipe-explain-mini'>・ReactとViteを用いた自己紹介ページ（このサイトのことです!）</p>
+                    <p className='swipe-explain-mini'>できればこのページを拡張していきたい</p>
+                    <p className='swipe-explain-mini'>・バックエンドもいじっていきます</p>
                   </div>
                 </div>
               </SwiperSlide>
@@ -79,6 +96,15 @@ function App() {
 
         <div className='link-area'>
           <p>My link list</p>
+          <Card 
+            serviceName = "Github" 
+            serviceExp = "リポジトリがあります"
+          />
+
+          <Card 
+            serviceName = "Qiita" 
+            serviceExp = "何も上げてないよ"
+          />
         </div>
       </div>
     </>
