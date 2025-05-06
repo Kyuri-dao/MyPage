@@ -1,0 +1,233 @@
+/* モバイル共通 */
+.m-text{
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+/* モバイルヘッダー */
+.m-header{
+    display: flex;
+    background-color: #004445;
+}
+
+.m-title-ct{
+    flex: 1;
+    flex-direction: column;
+    color: #fff;
+    background-color: #021C1E;
+    border-width: 5px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 5%;
+}
+
+.m-headerlink{
+    flex: 2;
+    padding: 20px;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.m-logo{
+    max-width: 15vw;
+    align-self: flex-end;
+    margin: 10px;
+}
+
+/* 共通メイン */
+.main{
+    margin: 0;
+    background-color: #004445;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* モバイルメイン */
+.m-main{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.m-main-title{
+    flex: 1;
+    background-color: #6FB98F;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: fit-content;
+}
+
+.m-main-cont{
+    flex: 3;
+    flex-wrap: wrap;
+    background-color: #2C7873;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.m-main-cont-title{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.m-main-src{
+    width: 100px;
+}
+
+.m-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+/* モバイルフッダー */
+.m-fooder{
+    background-color: #021C1E;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    width: auto;
+    height: fit-content;
+    align-items: center;
+}
+
+.m-fooder-title{
+    flex: 1;
+    text-align: left;
+}
+
+.m-fooder-cont{
+    flex: 2;
+    height: fit-content;
+    color: #fff;
+    text-align: right;
+    justify-content: center;
+}
+
+/* pc */
+
+.d-text{
+    flex-wrap: wrap;
+    margin: 10px;
+    font-size: 120%;
+}
+/* pcヘッダー */
+.d-header{
+    display: flex;
+    background-color: #004445;
+    align-items: center;
+}
+
+.d-title-ct{
+    flex: 1;
+    background-color: #021C1E;
+    color: #fff;
+    height: fit-content;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.d-headerlink{
+    display: flex;
+    flex: 2;
+    width: auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.d-logo{
+    width: 6vw;
+    margin: 20px;
+}
+
+/* pcメイン */
+.d-main{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.d-main-mid{
+    font-size: 150%;
+}
+
+.d-main-title{
+    flex: 1;
+    background-color: #6FB98F;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.d-main-cont{
+    display: flex;
+    background-color: #2C7873;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    justify-content: center;
+    flex: 1;
+}
+
+.d-main-cont-title{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.d-main-cont-cen{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.d-text-list{
+    font-size: 120%;
+    width: fit-content;
+    text-align: center;
+}
+
+
+.d-main-src-ct{
+    display: flex;
+    flex-direction: column;
+}
+
+.d-main-src{
+    max-height: 50vh;
+    margin: 10%;
+}
+
+.d-main-src-desc{
+    text-align: center;
+    margin: 10px;
+}
+
+.d-main-ubuntu{
+    margin: 10px;
+}
+
+/* pcフッダー */
+.d-fooder{
+    background-color: #021C1E;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    width: auto;
+    height: fit-content;
+    align-items: center;
+}
+
+.d-fooder-title{
+    flex: 1;
+    text-align: left;
+}
+
+.d-fooder-cont{
+    flex: 2;
+    height: fit-content;
+    color: #fff;
+    text-align: right;
+    justify-content: center;
+}
